@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <item
+      android:id="@+id/Dhhaka"
+      android:title="Dhaka"
+      android:icon="@mipmap/icc"
+    >
+
+  </item>
+    <item
+        android:id="@+id/CHittagong"
+        android:title="Chittagong"
+        android:icon="@mipmap/icc">
+
+    </item>
+    <item
+        android:id="@+id/Sylett"
+        android:title="Sylet"
+        android:icon="@mipmap/icc">
+
+    </item>
+    <item
+        android:id="@+id/Rajshahi"
+        android:title="Rajshahi"
+        android:icon="@mipmap/icc">
+
+    </item>
+  <item
+      android:id="@+id/Comilla"
+      android:title="Comilla"
+      android:icon="@mipmap/icc">
+
+  </item>
+  <item
+      android:id="@+id/Kulna"
+      android:title="Kulna"
+      android:icon="@mipmap/icc">
+
+  </item>
+</menu>
