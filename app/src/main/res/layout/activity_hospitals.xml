@@ -6,10 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/DrawerLayout"
-    tools:context=".Hospitals"
+    tools:context=".Hospitals">
 
-
-    >
 
         <FrameLayout
 
@@ -29,6 +27,7 @@
         app:headerLayout="@layout/header"
         android:id="@+id/nev"
         >
+
 
     </android.support.design.widget.NavigationView>
 

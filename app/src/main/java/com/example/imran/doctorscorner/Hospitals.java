@@ -30,6 +30,7 @@ public class Hospitals extends AppCompatActivity {
     public DrawerLayout mdrawerlayput;
     public ActionBarDrawerToggle mtoogle;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -42,6 +43,8 @@ public class Hospitals extends AppCompatActivity {
         FragmentTransaction fragmentTransaction=getSupportFragmentManager().beginTransaction();
         fragmentTransaction.replace(R.id.fragmentcontainer,chi);
         fragmentTransaction.commit();
+
+
 
 
         //for the drawer layout
