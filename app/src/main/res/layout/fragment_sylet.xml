@@ -4,10 +4,13 @@
     android:layout_height="match_parent"
     tools:context="com.example.imran.doctorscorner.Sylet">
 
-    <!-- TODO: Update blank fragment layout -->
   <ListView
       android:layout_width="match_parent"
       android:layout_height="match_parent"
-      android:id="@+id/listsylet"></ListView>
+      android:id="@+id/listsylet"
+      android:divider="#f00"
+      android:dividerHeight="1dp"
+      >
+  </ListView>
 
 </FrameLayout>
