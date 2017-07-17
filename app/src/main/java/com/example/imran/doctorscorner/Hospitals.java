@@ -1,5 +1,6 @@
 package com.example.imran.doctorscorner;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.FragmentTransaction;
@@ -23,21 +24,23 @@ import android.widget.ListView;
 
 import android.widget.ListView;
 
+
 import java.util.ArrayList;
 
 
-public class Hospitals extends AppCompatActivity {
+public class Hospitals extends AppCompatActivity  implements  Chittagong.onitemclick{
     public DrawerLayout mdrawerlayput;
     public ActionBarDrawerToggle mtoogle;
 
-
+private  Toolbar toolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hospitals);
 
-
+      toolbar=(Toolbar) findViewById(R.id.nev_action);
+        setSupportActionBar(toolbar);
         // use mtoogle in select section
         Chittagong chi=new Chittagong();
         FragmentTransaction fragmentTransaction=getSupportFragmentManager().beginTransaction();
@@ -116,6 +119,7 @@ public class Hospitals extends AppCompatActivity {
 
     }
 
+
 //make the menu icon clickable
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -125,7 +129,19 @@ public class Hospitals extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-    //do transaction on click
 
-
+    /**
+     *     for chittagong
+     * @param i
+     */
+    @Override
+    public void onclick(Intent i) {
+        startActivity(i);
+    }
 }
+
+
+
+
+
+
